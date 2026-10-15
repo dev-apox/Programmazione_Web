@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Form di Input Dati</title>
+</head>
+<body>
+
+    <h2>Modulo di Registrazione / Input Dati</h2>
+
+    <form>
+        <!-- Esercizio 1.1: Campi di testo base -->
+        <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome">
+        </p>
+        
+        <p>
+            <label for="age">Età:</label><br>
+            <input type="number" id="age" name="age">
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password">
+        </p>
+
+        <!-- Esercizio 1.2: Textarea per commenti su più righe -->
+        <p>
+            <label for="commento">Commento:</label><br>
+            <textarea id="commento" name="commento" rows="4" cols="40"></textarea>
+        </p>
+
+        <!-- Esercizio 1.3: Radio Button per la selezione del genere -->
+        <p>
+            Genere:<br>
+            <input type="radio" id="m" name="genere" value="maschio">
+            <label for="m">Maschio</label><br>
+            
+            <input type="radio" id="f" name="genere" value="femmina">
+            <label for="f">Femmina</label>
+        </p>
+
+        <!-- Esercizio 1.4: Checkbox per selezione multipla di interessi -->
+        <p>
+            Interessi personali:<br>
+            <input type="checkbox" id="int1" name="interessi[1]" value="cucina">
+            <label for="int1">Cucina</label><br>
+            
+            <input type="checkbox" id="int2" name="interessi[2]" value="sport">
+            <label for="int2">Sport</label><br>
+            
+            <input type="checkbox" id="int3" name="interessi[3]" value="libri">
+            <label for="int3">Libri</label><br>
+            
+            <input type="checkbox" id="int4" name="interessi[4]" value="viaggi">
+            <label for="int4">Viaggi</label>
+        </p>
+
+        <!-- Esercizio 1.5: Elemento Select per la professione -->
+        <p>
+            <label for="professione">Professione:</label><br>
+            <select id="professione" name="professione">
+                <option value="studente">Studente</option>
+                <option value="dipendente">Dipendente</option>
+                <option value="lavoratore autonomo">Lavoratore Autonomo</option>
+                <option value="artigiano">Artigiano</option>
+            </select>
+        </p>
+
+        <!-- Esercizio 1.1: Bottoni di invio e reset -->
+        <p>
+            <input type="submit" value="Invia">
+            <input type="reset" value="Annulla">
+        </p>
+    </form>
+
+</body>
+</html>

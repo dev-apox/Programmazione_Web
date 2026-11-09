@@ -24,7 +24,6 @@
 
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['stringhe'])) {
-        // Rimuove eventuali stringhe vuote
         $stringhe = array_filter($_POST['stringhe'], function($value) {
             return trim($value) !== '';
         });

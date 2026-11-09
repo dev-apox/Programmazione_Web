@@ -6,7 +6,6 @@ $dbname = "person_db";
 
 function myFun_createDB($conn, $dbname) {
     if (!$conn->select_db($dbname)) {
-        // Il DB non esiste, lo creiamo
         $sql_create_db = "CREATE DATABASE `$dbname`";
         if ($conn->query($sql_create_db) === TRUE) {
             $conn->select_db($dbname);
